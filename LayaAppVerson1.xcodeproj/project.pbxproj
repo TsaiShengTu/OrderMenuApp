@@ -9,23 +9,52 @@
 /* Begin PBXBuildFile section */
 		7747965828F69A63001A13E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747965728F69A63001A13E1 /* AppDelegate.swift */; };
 		7747965A28F69A63001A13E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747965928F69A63001A13E1 /* SceneDelegate.swift */; };
-		7747965C28F69A63001A13E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747965B28F69A63001A13E1 /* ViewController.swift */; };
 		7747965F28F69A63001A13E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747965D28F69A63001A13E1 /* Main.storyboard */; };
 		7747966228F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7747966028F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld */; };
 		7747966428F69A65001A13E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7747966328F69A65001A13E1 /* Assets.xcassets */; };
 		7747966728F69A65001A13E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747966528F69A65001A13E1 /* LaunchScreen.storyboard */; };
+		7747967628F6C634001A13E1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967528F6C634001A13E1 /* Data.swift */; };
+		7747967828F6C648001A13E1 /* DataShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967728F6C648001A13E1 /* DataShop.swift */; };
+		7747967A28F6C6FC001A13E1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967928F6C6FC001A13E1 /* DataModel.swift */; };
+		7747967E28F6C7A3001A13E1 /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967D28F6C7A3001A13E1 /* IndexTableViewController.swift */; };
+		7747968028F6C7B4001A13E1 /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */; };
+		7747968428F6C7F3001A13E1 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */; };
+		7747968628F6C805001A13E1 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968528F6C805001A13E1 /* ShopTableViewCell.swift */; };
+		7747968A28F6E81B001A13E1 /* indexShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */; };
+		7747968C28F6E82F001A13E1 /* indexShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */; };
+		7747968E28F6E886001A13E1 /* indexShopUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968D28F6E886001A13E1 /* indexShopUITableView.swift */; };
+		7747969128F6EC7B001A13E1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7747969028F6EC7B001A13E1 /* Kingfisher */; };
+		778E666E28F8112A001A50E1 /* ShopSellListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */; };
+		778E667028F8115F001A50E1 /* ShopSellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */; };
+		778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */; };
+		778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667628F8F1BB001A50E1 /* DataShopItem.swift */; };
+		778E667928F8FC56001A50E1 /* ShopItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7747965428F69A63001A13E1 /* LayaAppVerson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayaAppVerson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7747965728F69A63001A13E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7747965928F69A63001A13E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7747965B28F69A63001A13E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7747965E28F69A63001A13E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7747966128F69A63001A13E1 /* LayaAppVerson1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LayaAppVerson1.xcdatamodel; sourceTree = "<group>"; };
 		7747966328F69A65001A13E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7747966628F69A65001A13E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7747966828F69A65001A13E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7747967528F6C634001A13E1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7747967728F6C648001A13E1 /* DataShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShop.swift; sourceTree = "<group>"; };
+		7747967928F6C6FC001A13E1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7747967D28F6C7A3001A13E1 /* IndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
+		7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
+		7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
+		7747968528F6C805001A13E1 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+		7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopTableViewCell.swift; sourceTree = "<group>"; };
+		7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopTableViewController.swift; sourceTree = "<group>"; };
+		7747968D28F6E886001A13E1 /* indexShopUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopUITableView.swift; sourceTree = "<group>"; };
+		778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSellListTableViewCell.swift; sourceTree = "<group>"; };
+		778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSellTableViewController.swift; sourceTree = "<group>"; };
+		778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewController.swift; sourceTree = "<group>"; };
+		778E667628F8F1BB001A50E1 /* DataShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShopItem.swift; sourceTree = "<group>"; };
+		778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7747969128F6EC7B001A13E1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +90,100 @@
 			children = (
 				7747965728F69A63001A13E1 /* AppDelegate.swift */,
 				7747965928F69A63001A13E1 /* SceneDelegate.swift */,
-				7747965B28F69A63001A13E1 /* ViewController.swift */,
+				7747966E28F6C514001A13E1 /* Data */,
+				7747966F28F6C51D001A13E1 /* DataModel */,
+				7747967228F6C58B001A13E1 /* ViewIndex */,
+				7747967328F6C59B001A13E1 /* ViewShop */,
 				7747965D28F69A63001A13E1 /* Main.storyboard */,
+				7747968D28F6E886001A13E1 /* indexShopUITableView.swift */,
 				7747966328F69A65001A13E1 /* Assets.xcassets */,
+				778E667128F8ED6E001A50E1 /* ViewShopItems */,
 				7747966528F69A65001A13E1 /* LaunchScreen.storyboard */,
 				7747966828F69A65001A13E1 /* Info.plist */,
 				7747966028F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld */,
 			);
 			path = LayaAppVerson1;
+			sourceTree = "<group>";
+		};
+		7747966E28F6C514001A13E1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7747967528F6C634001A13E1 /* Data.swift */,
+				7747967728F6C648001A13E1 /* DataShop.swift */,
+				778E667628F8F1BB001A50E1 /* DataShopItem.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7747966F28F6C51D001A13E1 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7747967928F6C6FC001A13E1 /* DataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		7747967228F6C58B001A13E1 /* ViewIndex */ = {
+			isa = PBXGroup;
+			children = (
+				7747968828F6E7F6001A13E1 /* indexShopList */,
+				7747968728F6E7E4001A13E1 /* indexList */,
+			);
+			path = ViewIndex;
+			sourceTree = "<group>";
+		};
+		7747967328F6C59B001A13E1 /* ViewShop */ = {
+			isa = PBXGroup;
+			children = (
+				778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */,
+				778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */,
+				778E666A28F810B6001A50E1 /* shopListIndex */,
+				7747967428F6C5C2001A13E1 /* ViewShopTake */,
+			);
+			path = ViewShop;
+			sourceTree = "<group>";
+		};
+		7747967428F6C5C2001A13E1 /* ViewShopTake */ = {
+			isa = PBXGroup;
+			children = (
+				778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */,
+				778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */,
+			);
+			path = ViewShopTake;
+			sourceTree = "<group>";
+		};
+		7747968728F6E7E4001A13E1 /* indexList */ = {
+			isa = PBXGroup;
+			children = (
+				7747967D28F6C7A3001A13E1 /* IndexTableViewController.swift */,
+				7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */,
+			);
+			path = indexList;
+			sourceTree = "<group>";
+		};
+		7747968828F6E7F6001A13E1 /* indexShopList */ = {
+			isa = PBXGroup;
+			children = (
+				7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */,
+				7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */,
+			);
+			path = indexShopList;
+			sourceTree = "<group>";
+		};
+		778E666A28F810B6001A50E1 /* shopListIndex */ = {
+			isa = PBXGroup;
+			children = (
+				7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */,
+				7747968528F6C805001A13E1 /* ShopTableViewCell.swift */,
+			);
+			path = shopListIndex;
+			sourceTree = "<group>";
+		};
+		778E667128F8ED6E001A50E1 /* ViewShopItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewShopItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +202,9 @@
 			dependencies = (
 			);
 			name = LayaAppVerson1;
+			packageProductDependencies = (
+				7747969028F6EC7B001A13E1 /* Kingfisher */,
+			);
 			productName = LayaAppVerson1;
 			productReference = 7747965428F69A63001A13E1 /* LayaAppVerson1.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 7747964B28F69A63001A13E1;
+			packageReferences = (
+				7747968F28F6EC7B001A13E1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7747965528F69A63001A13E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,10 +263,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7747965C28F69A63001A13E1 /* ViewController.swift in Sources */,
+				778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */,
+				7747967E28F6C7A3001A13E1 /* IndexTableViewController.swift in Sources */,
+				778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */,
 				7747966228F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld in Sources */,
+				7747968628F6C805001A13E1 /* ShopTableViewCell.swift in Sources */,
+				7747968028F6C7B4001A13E1 /* IndexTableViewCell.swift in Sources */,
 				7747965828F69A63001A13E1 /* AppDelegate.swift in Sources */,
+				7747967828F6C648001A13E1 /* DataShop.swift in Sources */,
+				7747968A28F6E81B001A13E1 /* indexShopTableViewCell.swift in Sources */,
+				778E667028F8115F001A50E1 /* ShopSellTableViewController.swift in Sources */,
+				7747968C28F6E82F001A13E1 /* indexShopTableViewController.swift in Sources */,
 				7747965A28F69A63001A13E1 /* SceneDelegate.swift in Sources */,
+				7747968428F6C7F3001A13E1 /* ShopTableViewController.swift in Sources */,
+				778E666E28F8112A001A50E1 /* ShopSellListTableViewCell.swift in Sources */,
+				778E667928F8FC56001A50E1 /* ShopItemsTableViewCell.swift in Sources */,
+				7747967628F6C634001A13E1 /* Data.swift in Sources */,
+				7747968E28F6E886001A13E1 /* indexShopUITableView.swift in Sources */,
+				7747967A28F6C6FC001A13E1 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +498,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7747968F28F6EC7B001A13E1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7747969028F6EC7B001A13E1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7747968F28F6EC7B001A13E1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7747966028F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld */ = {
