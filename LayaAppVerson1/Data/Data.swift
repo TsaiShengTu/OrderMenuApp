@@ -25,6 +25,7 @@ struct Fields:Codable {
 struct ShopImage:Codable{
     let url:URL
 }
+
 struct IndexList{
     let listName:String
     let listImage:String
@@ -55,4 +56,59 @@ struct IndexList{
         return [indexList1,indexList2,indexList3,indexList4,indexList5]
         
     }
+}
+
+class Save{
+    
+    
+}
+
+
+
+
+//以下是收藏的struct
+struct collectionShopes:Equatable,Codable{
+    //所有的資料
+    var AllVocs = [collectionShop]()
+    //收藏的資料
+    var collectedVocs = [collectionShop]()
+    
+    //下載
+     func load() -> [collectionShop]?{
+        UserDefaults.standard.object(forKey: "save") as? [collectionShop]
+    }
+    //存取
+     func save(item:[collectionShop]){
+        UserDefaults.standard.set(item, forKey: "save")
+    }
+    
+    //加取 收藏的函式
+    //兩個參數，如果是true 就收藏進去 所有的資料
+    mutating func collectShop(isCollected:Bool,allCollect:collectionShop){
+        //陣列的索引值為0
+        var index = 0
+        if isCollected{
+            collectedVocs.append(allCollect)
+        }
+        else{
+            //檢查所有的資料 有無收藏，如果有
+            if collectedVocs.contains(allCollect){
+                // MARK: 這邊看不懂
+                while collectedVocs[index] != allCollect{
+                    index += 1
+                }
+                //移除
+                collectedVocs.remove(at: index)
+            }
+        }
+    }
+    
+    
+    
+}
+struct collectionShop:Equatable,Codable{
+    let address:String
+    let shopName:String
+    let pic:URL
+    let heart:Bool
 }

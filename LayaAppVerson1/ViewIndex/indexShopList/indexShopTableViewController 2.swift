@@ -1,105 +1,97 @@
 //
-//  ShopTableViewController.swift
+//  indexShopTableViewController.swift
 //  LayaAppVerson1
 //
 //  Created by 蔡勝宇 on 2022/10/12.
 //
 
 import UIKit
+import Kingfisher
 
-class ShopTableViewController: UITableViewController {
-    var list1 = [IndexList]()
-    var list2 = [IndexList]()
+class indexShopTableViewController: UITableViewController {
+
+    static var list: DataShopitem?
     
-    let laYaIndexpath = IndexPath(row: 3, section: 0)
-    
-    @IBOutlet weak var closeButtion1: UIBarButtonItem!
+    //把下載的東西接給這個變數
+    var lists = [Record]()
+    //項目的數項
+    var city1 = [Record]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        list1 = IndexList.loadListData1()
-        list2 = IndexList.loadListData2()
-        let closeButton2 = UIBarButtonItem(systemItem: .close)
-        closeButtion1 = closeButton2
+        ShopItemController.shared.fetchshopList { result
+            in
+             switch result {
+             case .success(let respone):
+                 indexShopTableViewController.list = respone
+                 DispatchQueue.main.async {
+                     //讀出全部的東西
+                     self.lists = respone.records
+                     for list in self.lists{
+                         switch list.fields.shopCity{
+                         case "基隆":
+                             self.city1.append(list)
+                         default:
+                             break
+                         }
+                     }
+                     self.tableView.reloadData()
+                 }
+             case .failure(_):
+                 print("error")
+            }
+        }
         
         
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if tableView.indexPathForSelectedRow == laYaIndexpath
-        {
-            if let navigationController = navigationController{
-                navigationController.popToRootViewController(animated: true)
-//                let count = navigationController.viewControllers.count
-//                let gobackTop = navigationController.viewControllers[ count - 3]
-//                show(gobackTop, sender: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "indexShopTableViewCell"{
+            if let indexPath = tableView.indexPathForSelectedRow, let sections = tableView.indexPathForSelectedRow?.section{
+                let prepareText = segue.destination as! ShopSellTableViewController
+                switch sections {
+                case 0:
+                    prepareText.Navigationtitle = city1[indexPath.row].fields.shopName
+                default:
+                    break
+                }
+                
             }
         }
-        return indexPath
-    }
-    
-    
-    
-    @IBAction func backToShop(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Table view data source
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0{
-           return "會員專區"
-        }
-        else{
-           return "門市專區"
-        }
+        return "基隆"
     }
     
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if section == 0{
-            return 4
-        }
-        else{
-            return 5
-        }
+        return city1.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTableViewCell", for: indexPath) as! ShopTableViewCell
-            let list = list1[indexPath.row]
-            cell.shopListName.text = list.listName
-            if indexPath.row == 3{
-                cell.shopListImage.image = UIImage(named: "LayaLogo")
-                }
-            else{
-                cell.shopListImage.image = UIImage(systemName: list.listImage)
-                }
-            return cell
-        }
-        else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTableViewCell", for: indexPath) as! ShopTableViewCell
-            let list2 = list2[indexPath.row]
-            cell.shopListName.text = list2.listName
-            cell.shopListImage.image = UIImage(systemName:list2.listImage )
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "indexShopTableViewCell", for: indexPath) as! indexShopTableViewCell
         
+        let shopList = indexShopTableViewController.list?.records[indexPath.row]
+        cell.shopNameLable.text = shopList?.fields.shopName
+        cell.shopAddressLable.text = shopList?.fields.shopAddress
+        cell.shopImage.kf.setImage(with:shopList?.fields.shopImage[0].url)
 
         // Configure the cell...
 
-        
+        return cell
     }
     
 

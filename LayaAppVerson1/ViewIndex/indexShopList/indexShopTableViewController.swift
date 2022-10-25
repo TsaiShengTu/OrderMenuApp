@@ -16,6 +16,9 @@ class indexShopTableViewController: UITableViewController {
     var lists = [Record]()
     //項目的數項
     var city1 = [Record]()
+    
+    var heartClick = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ShopItemController.shared.fetchshopList { result
@@ -40,12 +43,30 @@ class indexShopTableViewController: UITableViewController {
                  print("error")
             }
         }
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "indexShopTableViewCell"{
+            if let indexPath = tableView.indexPathForSelectedRow, let sections = tableView.indexPathForSelectedRow?.section{
+                let prepareText = segue.destination as! ShopSellTableViewController
+                switch sections {
+                case 0:
+                    prepareText.Navigationtitle = city1[indexPath.row].fields.shopName
+                    let selectShop = collectionShop(address: city1[indexPath.row].fields.shopAddress, shopName: city1[indexPath.row].fields.shopName, pic: city1[indexPath.row].fields.shopImage[0].url, heart: heartClick)
+                    prepareText.collectionShopGet = selectShop
+                default:
+                    break
+                }
+                
+            }
+        }
     }
 
     // MARK: - Table view data source

@@ -14,7 +14,7 @@ class ShopItemController{
     let shopListUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopList")!
     let shopSellUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopSell?sort[][field]=name&sort[][direction]=asc")!
     let shopItemsUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopListItems?sort[][field]=priceItem&sort[][direction]=desc")!
-    
+    let shopItemUrl2 = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopListItems1")!
     
     // @escaping脫逃，功能是函式完成後，參數還能使用
     //換句話說就是 強制直接引用
@@ -83,4 +83,24 @@ class ShopItemController{
         }
         .resume()
     }
+//    func fetchshopListItem2(completion:@escaping(Result<DataShopItem2,Error>)->()){
+//        var request = URLRequest(url:shopItemUrl2)
+//        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
+//        URLSession.shared.dataTask(with: request) { data, response, error
+//            in
+//            let decoder = JSONDecoder()
+//            if let data = data{
+//                do{
+//                    let shopListitemResponse = try decoder.decode(DataShopItem2.self, from: data)
+//
+//                    completion(.success(shopListitemResponse))
+//                }
+//                catch{
+//                    print(error)
+//                    completion(.failure(error))
+//                }
+//            }
+//        }
+//        .resume()
+//    }
 }

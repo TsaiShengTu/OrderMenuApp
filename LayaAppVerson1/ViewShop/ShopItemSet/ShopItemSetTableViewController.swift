@@ -1,42 +1,17 @@
 //
-//  ShopItemsTableViewController.swift
+//  ShopItemSetTableViewController.swift
 //  LayaAppVerson1
 //
-//  Created by 蔡勝宇 on 2022/10/14.
+//  Created by 蔡勝宇 on 2022/10/15.
 //
 
 import UIKit
 
-class ShopItemsTableViewController: UITableViewController {
+class ShopItemSetTableViewController: UITableViewController {
     
-    @IBOutlet weak var shopSellImage: UIImageView!
-    
-    @IBOutlet weak var shopSellName: UILabel!
-    
-    @IBOutlet weak var shopSellPrice: UILabel!
-    
-    var shopSellPrice1 = ""
-    var shopSellName1 = ""
-    var shopSellImage1:UIImage?
-     
-    static var list:DataShopItem?
+    var getItemName = ""
+
     override func viewDidLoad() {
-        shopSellPrice.text = shopSellPrice1
-        shopSellName.text = shopSellName1
-        ShopItemController.shared.fetchshopListItem { result
-            in
-            switch result{
-            case .success(let respones):
-                ShopItemsTableViewController.list = respones
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-                print(respones)
-                
-            case .failure(_):
-                print("error")
-            }
-        }
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -48,25 +23,25 @@ class ShopItemsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  ShopItemsTableViewController.list?.records.count ?? 1
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopItemsTableViewCell", for: indexPath) as! ShopItemsTableViewCell
-        let lists = ShopItemsTableViewController.list?.records[indexPath.row]
-        cell.itemsName.text = lists?.fields.nameItem
-        cell.itemsPrice.text = lists?.fields.priceItem 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.

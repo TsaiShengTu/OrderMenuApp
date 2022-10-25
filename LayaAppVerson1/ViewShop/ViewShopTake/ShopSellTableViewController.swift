@@ -11,6 +11,24 @@ import Kingfisher
 class ShopSellTableViewController: UITableViewController {
     
     
+    @IBOutlet weak var heartButton: UIBarButtonItem!
+    var touchedStarIndex = 0
+    var list : collectionShopes?
+    
+    //接取傳值過來的店家名稱和地址等
+    var collectionShopGet:collectionShop!
+    
+//    //新增表格的orderMenu
+//    var collectionSum = [collectionShopes]()
+//    //單筆資料，每次都會新增一個results
+//    var collectionLists: collectionShopes!
+    
+     //為了引用函式
+    
+    
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    var Navigationtitle:String = ""
+    
     var shoplist = [Recordl]()
     var shoplist1 = [Recordl]()
     var shoplist2 = [Recordl]()
@@ -23,6 +41,7 @@ class ShopSellTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.title = Navigationtitle
         ShopItemController.shared.fetchshopSell { result
             in
             switch result{
@@ -46,20 +65,41 @@ class ShopSellTableViewController: UITableViewController {
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-                    
-                    
                 }
             case .failure(_):
                 print("error")
             }
         }
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
+        heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    //收藏的函式
+    @IBAction func collectionHeart(_ sender: UIBarButtonItem) {
+        if list?.collectedVocs.contains(collectionShopGet) == false {
+            //如果比對過後，沒有東西
+            //加入到AllVocs
+            list?.collectShop(isCollected: true, allCollect:collectionShopGet )
+            heartButton.setBackgroundImage(UIImage(systemName: "star.fill"), for: .normal, barMetrics: .default)
+            print("YoYo")
+            //加入所有牌組
+        } else {
+            //反之，不加入牌組
+            list?.collectShop(isCollected: false, allCollect: collectionShopGet)
+            heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
+            print("YoYo1")
+        }
+        list?.save(item:[collectionShopGet])
+        print(list?.save(item:[collectionShopGet]))
+        
+        //重置
+        tableView.reloadData()
+        
+    }
+    
+    
 
     // MARK: - Table view data source
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -71,21 +111,27 @@ class ShopSellTableViewController: UITableViewController {
                 case 0:
                     goToShopitem.shopSellPrice1 = shoplist1[indexPath.row].fields.price
                     goToShopitem.shopSellName1 = shoplist1[indexPath.row].fields.name
+                    goToShopitem.shopSellUrl = shoplist1[indexPath.row].fields.image[0].url
                 case 1:
                     goToShopitem.shopSellPrice1 = shoplist2[indexPath.row].fields.price
                     goToShopitem.shopSellName1 = shoplist2[indexPath.row].fields.name
+                    goToShopitem.shopSellUrl = shoplist2[indexPath.row].fields.image[0].url
                 case 2:
                     goToShopitem.shopSellPrice1 = shoplist3[indexPath.row].fields.price
                     goToShopitem.shopSellName1 = shoplist3[indexPath.row].fields.name
+                    goToShopitem.shopSellUrl = shoplist3[indexPath.row].fields.image[0].url
                 case 3:
                     goToShopitem.shopSellPrice1 = shoplist4[indexPath.row].fields.price
                     goToShopitem.shopSellName1 = shoplist4[indexPath.row].fields.name
+                    goToShopitem.shopSellUrl = shoplist4[indexPath.row].fields.image[0].url
                 default:
                     goToShopitem.shopSellPrice1 = shoplist5[indexPath.row].fields.price
                     goToShopitem.shopSellName1 = shoplist5[indexPath.row].fields.name
+                    goToShopitem.shopSellUrl = shoplist5[indexPath.row].fields.image[0].url
                 }
             }
         }
+        
     }
     
     
@@ -167,7 +213,7 @@ class ShopSellTableViewController: UITableViewController {
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist4[indexPath.row]
+            let lists = shoplist5[indexPath.row]
             cell.shopSellName.text = lists.fields.name
             cell.shopSellPrice.text = lists.fields.price
             cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
