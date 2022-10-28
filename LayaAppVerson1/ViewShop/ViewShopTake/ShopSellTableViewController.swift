@@ -38,8 +38,15 @@ class ShopSellTableViewController: UITableViewController {
     var shoplist4 = [Recordl]()
     var shoplist5 = [Recordl]()
     
-//    var shoplistSum = [
-//        shoplist1,shoplist2,shoplist3,shoplist4,shoplist5]
+    
+    var shopSellAll = [Fieldsl]()
+    
+    var shopSellDic = [String:[Fieldsl]]()
+    
+    var group = [String]()
+    
+    var shopSellOk = [Fieldsl]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,26 +58,18 @@ class ShopSellTableViewController: UITableViewController {
             in
             switch result{
             case .success(let respones):
-                self.shoplist = respones.records
-                for list in self.shoplist{
-                    switch list.fields.select{
-                    case "美式漢堡":
-                        self.shoplist1.append(list)
-                    case "飲料":
-                        self.shoplist2.append(list)
-                    case "米堡":
-                        self.shoplist3.append(list)
-                    case "超值套餐(附中杯紅茶)":
-                        self.shoplist4.append(list)
-                    case "輕享套餐(附中杯紅茶)":
-                        self.shoplist5.append(list)
-                    default:
-                        break
-                    }
+                let shopSell:DataShopSell! = respones
+                for i in shopSell.records.indices{
+                    let sell = Fieldsl(name: shopSell.records[i].fields.name, price: shopSell.records[i].fields.price, select: shopSell.records[i].fields.select, sale: shopSell.records[i].fields.sale, image: shopSell.records[i].fields.image)
+                    self.shopSellAll.append(sell)
+                }
+                self.shopSellDic = Dictionary(grouping: self.shopSellAll) { shop in
+                    shop.select
+                }
+                self.group = self.shopSellDic.keys.sorted()
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-                }
             case .failure(_):
                 print("error")
             }
@@ -104,37 +103,62 @@ class ShopSellTableViewController: UITableViewController {
 //        tableView.reloadData()
 //
 //    }
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let group = group[indexPath.section]
+        
+        shopSellOk = shopSellDic[group]!
+        
+        let shopSell = shopSellOk[indexPath.row]
+        switch group {
+        case "米堡":
+            performSegue(withIdentifier: "美式漢堡", sender: nil)
+        case "輕享套餐(附中杯紅茶)":
+            performSegue(withIdentifier: "超值套餐(附中杯紅茶)", sender: nil)
+        default:
+            performSegue(withIdentifier: shopSell.select, sender: nil)
+        }
+        
+        
+    }
+    
+    @IBSegueAction func showUShambuger(_ coder: NSCoder, sender: Any?, segueIdentifier: String?) -> ShopItemsTableViewController? {
+        let controller = ShopItemsTableViewController(coder: coder)
+        if let row = tableView.indexPathForSelectedRow?.row {
+            controller?.prepare = shopSellOk[row]
+        }
+        return controller
+    }
     
     
-
+    @IBSegueAction func showSet(_ coder: NSCoder, sender: Any?, segueIdentifier: String?) -> shopHambugerTableViewController? {
+        let controller =  shopHambugerTableViewController(coder: coder)
+        if let row = tableView.indexPathForSelectedRow?.row{
+            controller?.prepare1 = shopSellOk[row]
+        }
+        return controller
+    }
+    
+    
     // MARK: - Table view data source
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "shopItem"{
+        
+        
+        
+        if segue.identifier == "\(group)"{
             if let indexPath = tableView.indexPathForSelectedRow,
                let sections = tableView.indexPathForSelectedRow?.section{
                 let goToShopitem = segue.destination as! ShopItemsTableViewController
-                switch sections{
-                case 0:
-                    goToShopitem.shopSellPrice1 = shoplist1[indexPath.row].fields.price
-                    goToShopitem.shopSellName1 = shoplist1[indexPath.row].fields.name
-                    goToShopitem.shopSellUrl = shoplist1[indexPath.row].fields.image[0].url
-                case 1:
-                    goToShopitem.shopSellPrice1 = shoplist2[indexPath.row].fields.price
-                    goToShopitem.shopSellName1 = shoplist2[indexPath.row].fields.name
-                    goToShopitem.shopSellUrl = shoplist2[indexPath.row].fields.image[0].url
-                case 2:
-                    goToShopitem.shopSellPrice1 = shoplist3[indexPath.row].fields.price
-                    goToShopitem.shopSellName1 = shoplist3[indexPath.row].fields.name
-                    goToShopitem.shopSellUrl = shoplist3[indexPath.row].fields.image[0].url
-                case 3:
-                    goToShopitem.shopSellPrice1 = shoplist4[indexPath.row].fields.price
-                    goToShopitem.shopSellName1 = shoplist4[indexPath.row].fields.name
-                    goToShopitem.shopSellUrl = shoplist4[indexPath.row].fields.image[0].url
-                default:
-                    goToShopitem.shopSellPrice1 = shoplist5[indexPath.row].fields.price
-                    goToShopitem.shopSellName1 = shoplist5[indexPath.row].fields.name
-                    goToShopitem.shopSellUrl = shoplist5[indexPath.row].fields.image[0].url
-                }
+                
+                
+                
+                
+                
+//                default:
+//                    goToShopitem.shopSellPrice1 = shoplist5[indexPath.row].fields.price
+//                    goToShopitem.shopSellName1 = shoplist5[indexPath.row].fields.name
+//                    goToShopitem.shopSellUrl = shoplist5[indexPath.row].fields.image[0].url
+                
             }
         }
         
@@ -143,90 +167,45 @@ class ShopSellTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0 :
-            return "美式漢堡"
-        case 1 :
-            return "飲料"
-        case 2 :
-            return "米堡"
-        case 3 :
-            return "超值套餐(附中杯紅茶)"
-        case 4 :
-            return "輕享套餐(附中杯紅茶)"
-        default:
-            break
-        }
-        return ""
+        return  group[section]
     }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 5
+        return group.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if section == 0{
-            return shoplist1.count
-        }
-        else if  section == 1{
-            return shoplist2.count
-        }
-        else if  section == 2{
-            return shoplist3.count
-        }
-        else if  section == 3{
-            return shoplist4.count
-        }
-        else if  section == 4{
-            return shoplist5.count
-        }
-        return 1
+        let group = group[section]
+        let dic = shopSellDic[group]
+        
+        return dic?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0{
+//        if indexPath.section == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist1[indexPath.row]
-            cell.shopSellName.text = lists.fields.name
-            cell.shopSellPrice.text = lists.fields.price
-            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
+            //            let lists = shoplist1[indexPath.row]
+            //            cell.shopSellName.text = lists.fields.name
+            //            cell.shopSellPrice.text = lists.fields.price
+            //            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
+            //            return cell
+            //        }
+            
+            let group = group[indexPath.section]
+            
+            shopSellOk = shopSellDic[group]!
+            
+            let shopSell = shopSellOk[indexPath.row]
+            cell.shopSellName.text = shopSell.name
+            cell.shopSellPrice.text = shopSell.price
+            cell.shopSellImage.kf.setImage(with: shopSell.image[0].url)
+            
+            
             return cell
-        }
-        else if indexPath.section == 1{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist2[indexPath.row]
-            cell.shopSellName.text = lists.fields.name
-            cell.shopSellPrice.text = lists.fields.price
-            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
-            return cell
-        }
-        else if indexPath.section == 2{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist3[indexPath.row]
-            cell.shopSellName.text = lists.fields.name
-            cell.shopSellPrice.text = lists.fields.price
-            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
-            return cell
-        }
-        else if indexPath.section == 3{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist4[indexPath.row]
-            cell.shopSellName.text = lists.fields.name
-            cell.shopSellPrice.text = lists.fields.price
-            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
-            return cell
-        }
-        else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopSellListTableViewCell", for: indexPath) as! ShopSellListTableViewCell
-            let lists = shoplist5[indexPath.row]
-            cell.shopSellName.text = lists.fields.name
-            cell.shopSellPrice.text = lists.fields.price
-            cell.shopSellImage.kf.setImage(with: lists.fields.image[0].url)
-            return cell
-        }
-        
     }
     
 

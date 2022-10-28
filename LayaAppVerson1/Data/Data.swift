@@ -22,7 +22,7 @@ struct Fields:Codable {
     var shopName:String
     let shopAddress:String
     let shopCity:String
-    var heart:Bool
+    var heart:Bool?
     let shopImage:[ShopImage]
     
     static let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

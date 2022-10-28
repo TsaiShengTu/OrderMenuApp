@@ -236,8 +236,8 @@
                     <connections>
                         <outlet property="heartButton" destination="aoK-po-hcP" id="fa9-bC-f4c"/>
                         <outlet property="navigationBar" destination="j6f-oM-O1a" id="18D-yH-aw7"/>
-                        <segue destination="KhX-ZJ-Eja" kind="show" identifier="美式漢堡" id="wy0-MP-BvL"/>
-                        <segue destination="HKT-w8-cpX" kind="show" identifier="套餐" id="4Pg-If-r6O"/>
+                        <segue destination="KhX-ZJ-Eja" kind="show" identifier="美式漢堡" destinationCreationSelector="showUShambuger:sender:segueIdentifier:" id="wy0-MP-BvL"/>
+                        <segue destination="HKT-w8-cpX" kind="show" identifier="超值套餐(附中杯紅茶)" destinationCreationSelector="showSet:sender:segueIdentifier:" id="4Pg-If-r6O"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="td3-xv-l9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -694,6 +694,9 @@
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="" image="square" catalog="system"/>
                                             <state key="selected" image="checkmark.square.fill" catalog="system"/>
+                                            <connections>
+                                                <action selector="buttonAdd:" destination="HKT-w8-cpX" eventType="touchUpInside" id="xdr-m1-8kE"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2k8-PH-NHj">
                                             <rect key="frame" x="53" y="11" width="251" height="34"/>
@@ -717,6 +720,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="9q6-Ko-NuC"/>
+                    <connections>
+                        <outlet property="buttonMinus" destination="FJO-Vm-gZh" id="Yey-49-26f"/>
+                        <outlet property="buttonPlus" destination="PHq-fo-kiz" id="xrA-rX-u4A"/>
+                        <outlet property="howMuchButton" destination="JvQ-sm-mcu" id="RVw-i2-XLc"/>
+                        <outlet property="numberLabel" destination="UQy-rF-LTu" id="Ggc-Av-dDt"/>
+                        <outlet property="shopSellImage" destination="cj0-Gn-ETs" id="2Nk-RP-Xjb"/>
+                        <outlet property="shopSellName" destination="xwO-1M-Jxx" id="vX0-Wm-dq8"/>
+                        <outlet property="shopSellPrice" destination="h9v-Yw-OVb" id="ree-b4-Rl1"/>
+                        <outlet property="writeSomethingLabel" destination="8UM-WH-uH9" id="0oS-e1-AuK"/>
+                        <outlet property="wrtieTextField" destination="7HD-LT-rTe" id="GOp-I8-4Co"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="car-YG-UHJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
