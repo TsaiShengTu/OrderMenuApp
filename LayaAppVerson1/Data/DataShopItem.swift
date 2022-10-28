@@ -23,7 +23,7 @@ struct Fields2:Codable{
 
 
 
-//這邊是 套餐選單的資料
+//這邊是 漢堡選單的資料
 struct ShopItemFood{
     let name:String
     let price:Int
@@ -34,3 +34,18 @@ enum ShopItemSection:Int{
     case set
     case topping
 }
+
+
+//這邊是套餐選單的資料
+struct ShopItemSet{
+    let name:String
+    let price:Int
+    var isadd = false
+}
+
+enum ShopItemSetSection:Int{
+    case meal
+    case drink
+    case toppingGrade
+}
+

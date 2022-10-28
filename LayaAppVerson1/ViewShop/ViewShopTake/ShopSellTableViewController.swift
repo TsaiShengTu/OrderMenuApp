@@ -10,10 +10,12 @@ import Kingfisher
 
 class ShopSellTableViewController: UITableViewController {
     
+    var shop:[Fields]!
+    
     
     @IBOutlet weak var heartButton: UIBarButtonItem!
     var touchedStarIndex = 0
-    var list : collectionShopes?
+//    var list : collectionShopes?
     
     //接取傳值過來的店家名稱和地址等
     var collectionShopGet:collectionShop!
@@ -27,7 +29,7 @@ class ShopSellTableViewController: UITableViewController {
     
     
     @IBOutlet weak var navigationBar: UINavigationItem!
-    var Navigationtitle:String = ""
+    var navigationtitle:String = ""
     
     var shoplist = [Recordl]()
     var shoplist1 = [Recordl]()
@@ -41,7 +43,10 @@ class ShopSellTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = Navigationtitle
+        
+        navigationtitle = shop[0].shopName
+        
+        navigationBar.title = navigationtitle
         ShopItemController.shared.fetchshopSell { result
             in
             switch result{
@@ -71,33 +76,34 @@ class ShopSellTableViewController: UITableViewController {
             }
         }
 
-        heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
+//        heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     //收藏的函式
-    @IBAction func collectionHeart(_ sender: UIBarButtonItem) {
-        if list?.collectedVocs.contains(collectionShopGet) == false {
-            //如果比對過後，沒有東西
-            //加入到AllVocs
-            list?.collectShop(isCollected: true, allCollect:collectionShopGet )
-            heartButton.setBackgroundImage(UIImage(systemName: "star.fill"), for: .normal, barMetrics: .default)
-            print("YoYo")
-            //加入所有牌組
-        } else {
-            //反之，不加入牌組
-            list?.collectShop(isCollected: false, allCollect: collectionShopGet)
-            heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
-            print("YoYo1")
-        }
-        list?.save(item:[collectionShopGet])
-        print(list?.save(item:[collectionShopGet]))
-        
-        //重置
-        tableView.reloadData()
-        
-    }
+//    @IBAction func collectionHeart(_ sender: UIBarButtonItem) {
+//        if list?.collectedVocs.contains(collectionShopGet) == false {
+//            //如果比對過後，沒有東西
+//            //加入到AllVocs
+//            list?.collectShop(isCollected: true, allCollect:collectionShopGet )
+//            heartButton.setBackgroundImage(UIImage(systemName: "star.fill"), for: .normal, barMetrics: .default)
+//            print("YoYo")
+//            //加入所有牌組
+//        } else {
+//            //反之，不加入牌組
+//            list?.collectShop(isCollected: false, allCollect: collectionShopGet)
+//            heartButton.setBackgroundImage(UIImage(systemName: "star"), for: .normal, barMetrics:.default)
+//            print("YoYo1")
+//        }
+//        list?.save(item:[collectionShopGet])
+//        print(list?.save(item:[collectionShopGet]))
+//
+//        //重置
+//        tableView.reloadData()
+//
+//    }
     
     
 
@@ -133,6 +139,7 @@ class ShopSellTableViewController: UITableViewController {
         }
         
     }
+    
     
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

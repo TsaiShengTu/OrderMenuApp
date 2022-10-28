@@ -11,6 +11,10 @@ public let apikey = "keyDPFR7Okan1NGGC"
 
 class ShopItemController{
     static let shared = ShopItemController()
+    var orderList = [OrderListItem]()
+    
+    var orderUpdate = [orderMenu]()
+    
     let shopListUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopList")!
     let shopSellUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopSell?sort[][field]=name&sort[][direction]=asc")!
     let shopItemsUrl = URL(string: "https://api.airtable.com/v0/appk1fzVKpuilyG7v/shopListItems?sort[][field]=priceItem&sort[][direction]=desc")!
@@ -83,6 +87,18 @@ class ShopItemController{
         }
         .resume()
     }
+//    func uploadOrder(completion:@escaping(Result<[orderMenu],Error>)->()){
+//        let shopListUrl = URL(string: "https://airtable.com/appk1fzVKpuilyG7v/tblU1UTuKJau2CCdM/viwdrba1DoM1Ch5Zo?blocks=hide")!
+//        var request = URLRequest(url: shopListUrl)
+//        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
+//        request.httpMethod = "POST"
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        let encoder = JSONEncoder()
+//        URLSession.shared.dataTask(with: request) { data, response, error
+//            in
+//        }
+//    }
+    
 //    func fetchshopListItem2(completion:@escaping(Result<DataShopItem2,Error>)->()){
 //        var request = URLRequest(url:shopItemUrl2)
 //        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")

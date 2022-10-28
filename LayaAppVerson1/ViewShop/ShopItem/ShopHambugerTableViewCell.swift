@@ -1,19 +1,20 @@
 //
-//  indexShopTableViewCell.swift
+//  ShopHambugerTableViewCell.swift
 //  LayaAppVerson1
 //
-//  Created by 蔡勝宇 on 2022/10/12.
+//  Created by Sheng-Yu on 2022/10/28.
 //
 
 import UIKit
 
-class indexShopTableViewCell: UITableViewCell {
+class ShopHambugerTableViewCell: UITableViewCell {
     
+    static let reuseIdentifeir = "\(ShopHambugerTableViewCell.self)"
     
-    @IBOutlet weak var heartButton: UIButton!
-    @IBOutlet weak var shopAddressLable: UILabel!
-    @IBOutlet weak var shopNameLable: UILabel!
-    @IBOutlet weak var shopImage: UIImageView!
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var itemAdd: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,8 +25,5 @@ class indexShopTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
-    
 
 }

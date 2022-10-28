@@ -7,6 +7,10 @@
 
 import Foundation
 
+//整筆訂單陣列化
+
+var orderSum = [orderMenu]()
+
 //存取整筆訂單
 
 struct orderMenu:Equatable,Codable{
@@ -15,7 +19,6 @@ struct orderMenu:Equatable,Codable{
     let toppingAndMeals:[String]
     let textField:String
     let itemNumber:Int
-    
     
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     
@@ -34,7 +37,7 @@ struct orderMenu:Equatable,Codable{
         let propertyListDecoder = PropertyListDecoder()
         return try? propertyListDecoder.decode(Array<orderMenu>.self, from: codedOrderList)
     }
-    
+
 }
 
 

@@ -29,13 +29,14 @@
 		778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */; };
 		778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667628F8F1BB001A50E1 /* DataShopItem.swift */; };
 		778E667928F8FC56001A50E1 /* ShopItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */; };
-		77C5DD1328FA66BD00BCDCA8 /* ShopItemMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5DD1228FA66BD00BCDCA8 /* ShopItemMoreTableViewCell.swift */; };
 		77C5DD1728FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5DD1628FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift */; };
 		77C5DD1928FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5DD1828FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift */; };
 		77D46D8D28FC15230064BBEC /* orderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8C28FC15230064BBEC /* orderList.swift */; };
 		77D46D8F28FC20DE0064BBEC /* orderListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8E28FC20DE0064BBEC /* orderListItem.swift */; };
 		9CBAA19E28FF8C1700B91988 /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAA19D28FF8C1700B91988 /* OrderListTableViewController.swift */; };
 		9CBAA1A028FF8D7300B91988 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAA19F28FF8D7300B91988 /* OrderListTableViewCell.swift */; };
+		9CCF3CD7290B5EA100326DF1 /* shopHambugerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */; };
+		9CCF3CD9290B5EB500326DF1 /* ShopHambugerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,13 +63,14 @@
 		778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewController.swift; sourceTree = "<group>"; };
 		778E667628F8F1BB001A50E1 /* DataShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShopItem.swift; sourceTree = "<group>"; };
 		778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewCell.swift; sourceTree = "<group>"; };
-		77C5DD1228FA66BD00BCDCA8 /* ShopItemMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemMoreTableViewCell.swift; sourceTree = "<group>"; };
 		77C5DD1628FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemSetTableViewController.swift; sourceTree = "<group>"; };
 		77C5DD1828FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemSetTableViewCell.swift; sourceTree = "<group>"; };
 		77D46D8C28FC15230064BBEC /* orderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderList.swift; sourceTree = "<group>"; };
 		77D46D8E28FC20DE0064BBEC /* orderListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderListItem.swift; sourceTree = "<group>"; };
 		9CBAA19D28FF8C1700B91988 /* OrderListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		9CBAA19F28FF8D7300B91988 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopHambugerTableViewController.swift; sourceTree = "<group>"; };
+		9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHambugerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +210,8 @@
 			children = (
 				778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */,
 				778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */,
-				77C5DD1228FA66BD00BCDCA8 /* ShopItemMoreTableViewCell.swift */,
+				9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */,
+				9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */,
 			);
 			path = ShopItem;
 			sourceTree = "<group>";
@@ -308,7 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCF3CD7290B5EA100326DF1 /* shopHambugerTableViewController.swift in Sources */,
 				778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */,
+				9CCF3CD9290B5EB500326DF1 /* ShopHambugerTableViewCell.swift in Sources */,
 				7747967E28F6C7A3001A13E1 /* IndexTableViewController.swift in Sources */,
 				778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */,
 				77C5DD1728FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift in Sources */,
@@ -323,7 +328,6 @@
 				7747968A28F6E81B001A13E1 /* indexShopTableViewCell.swift in Sources */,
 				778E667028F8115F001A50E1 /* ShopSellTableViewController.swift in Sources */,
 				7747968C28F6E82F001A13E1 /* indexShopTableViewController.swift in Sources */,
-				77C5DD1328FA66BD00BCDCA8 /* ShopItemMoreTableViewCell.swift in Sources */,
 				7747965A28F69A63001A13E1 /* SceneDelegate.swift in Sources */,
 				9CBAA1A028FF8D7300B91988 /* OrderListTableViewCell.swift in Sources */,
 				77C5DD1928FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift in Sources */,
