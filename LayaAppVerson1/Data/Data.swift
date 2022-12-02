@@ -10,6 +10,7 @@ import UIKit
 
 
 //商家資料
+//包含收藏
 struct DataShopitem: Codable{
     let records:[Record]
 }
@@ -24,9 +25,15 @@ struct Fields:Codable {
     let shopCity:String
     var heart:Bool?
     let shopImage:[ShopImage]
+    let phoneNumber:String
+    let shopTime:String
+    let shopAppCode:String
+    let shopTakeInTime:String
+    let latitude:String
+    let longitude:String
     
     static let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-    static let url = documentDirectory.appendingPathComponent("items").appendingPathExtension("plist")
+    static let url = documentDirectory.appendingPathComponent("items").appendingPathExtension("json")
     
     static func saveHeartData(saveheart:[Fields]){
         let encoder = JSONEncoder()

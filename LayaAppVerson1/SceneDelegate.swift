@@ -9,6 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    //
     var window: UIWindow?
 
 
@@ -17,6 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        //要先檢查是否有 token存在在 UserDefaults裡面
+        if let _ = UserDefaults.standard.string(forKey: "Token"){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+            }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

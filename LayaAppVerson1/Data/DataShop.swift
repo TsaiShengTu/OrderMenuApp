@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+
+//店家商品資料
+
 struct  DataShopSell: Codable{
     let records:[Recordl]
 }
@@ -22,7 +25,7 @@ struct Fieldsl: Codable {
     let price:String
     let select:String
     let sale:String
-   let image:[ShopImage2]
+    let image:[ShopImage2]
 }
 struct ShopImage2:Codable{
    let url:URL

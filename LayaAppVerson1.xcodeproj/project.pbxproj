@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773EA664291CFACA00BE71DA /* HamburgerToppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EA663291CFACA00BE71DA /* HamburgerToppingTableViewController.swift */; };
 		7747965828F69A63001A13E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747965728F69A63001A13E1 /* AppDelegate.swift */; };
 		7747965A28F69A63001A13E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747965928F69A63001A13E1 /* SceneDelegate.swift */; };
 		7747965F28F69A63001A13E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7747965D28F69A63001A13E1 /* Main.storyboard */; };
@@ -20,26 +21,41 @@
 		7747968028F6C7B4001A13E1 /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */; };
 		7747968428F6C7F3001A13E1 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */; };
 		7747968628F6C805001A13E1 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968528F6C805001A13E1 /* ShopTableViewCell.swift */; };
-		7747968A28F6E81B001A13E1 /* indexShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */; };
-		7747968C28F6E82F001A13E1 /* indexShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */; };
+		7747968A28F6E81B001A13E1 /* IndexShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968928F6E81B001A13E1 /* IndexShopTableViewCell.swift */; };
+		7747968C28F6E82F001A13E1 /* IndexShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968B28F6E82F001A13E1 /* IndexShopTableViewController.swift */; };
 		7747968E28F6E886001A13E1 /* indexShopUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747968D28F6E886001A13E1 /* indexShopUITableView.swift */; };
 		7747969128F6EC7B001A13E1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7747969028F6EC7B001A13E1 /* Kingfisher */; };
+		77695828291B553E00A291DC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77695827291B553E00A291DC /* PhotoCollectionViewCell.swift */; };
+		7769582B291B80B100A291DC /* ShopTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769582A291B80B100A291DC /* ShopTimeTableViewController.swift */; };
+		7769582D291B80C100A291DC /* ShopTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769582C291B80C100A291DC /* ShopTimeTableViewCell.swift */; };
+		77854360290E5E46004ECE4A /* DrinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785435F290E5E46004ECE4A /* DrinkTableViewController.swift */; };
+		77854362290E5E55004ECE4A /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77854361290E5E55004ECE4A /* DrinkTableViewCell.swift */; };
 		778E666E28F8112A001A50E1 /* ShopSellListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */; };
 		778E667028F8115F001A50E1 /* ShopSellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */; };
 		778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */; };
 		778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667628F8F1BB001A50E1 /* DataShopItem.swift */; };
 		778E667928F8FC56001A50E1 /* ShopItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */; };
-		77C5DD1728FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5DD1628FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift */; };
-		77C5DD1928FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5DD1828FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift */; };
-		77D46D8D28FC15230064BBEC /* orderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8C28FC15230064BBEC /* orderList.swift */; };
-		77D46D8F28FC20DE0064BBEC /* orderListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8E28FC20DE0064BBEC /* orderListItem.swift */; };
+		779158D6291D0FD8009C896C /* HamburgerDrinkIceAndLargeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158D5291D0FD8009C896C /* HamburgerDrinkIceAndLargeTableViewController.swift */; };
+		779158D8291D100B009C896C /* HamburgerDrinkIceAndLargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158D7291D100B009C896C /* HamburgerDrinkIceAndLargeTableViewCell.swift */; };
+		779158DB291D1CDB009C896C /* HamburgerDrinkIceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158DA291D1CDB009C896C /* HamburgerDrinkIceTableViewController.swift */; };
+		779158DD291D1CE9009C896C /* HamburgerDrinkIceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158DC291D1CE9009C896C /* HamburgerDrinkIceTableViewCell.swift */; };
+		779158E0291D2771009C896C /* HamburgerPepperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158DF291D2771009C896C /* HamburgerPepperTableViewController.swift */; };
+		779158E2291D2F2F009C896C /* HamburgerToppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779158E1291D2F2F009C896C /* HamburgerToppingTableViewCell.swift */; };
+		77C718752913F2370014BE69 /* HeartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C718742913F2370014BE69 /* HeartTableViewController.swift */; };
+		77C718772913F2470014BE69 /* HeartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C718762913F2470014BE69 /* HeartTableViewCell.swift */; };
+		77D46D8D28FC15230064BBEC /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8C28FC15230064BBEC /* OrderList.swift */; };
+		77D46D8F28FC20DE0064BBEC /* OrderItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D46D8E28FC20DE0064BBEC /* OrderItemList.swift */; };
 		9CBAA19E28FF8C1700B91988 /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAA19D28FF8C1700B91988 /* OrderListTableViewController.swift */; };
 		9CBAA1A028FF8D7300B91988 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAA19F28FF8D7300B91988 /* OrderListTableViewCell.swift */; };
-		9CCF3CD7290B5EA100326DF1 /* shopHambugerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */; };
+		9CCB77802911043E003002D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB777F2911043E003002D2 /* User.swift */; };
+		9CCB88092919E6C100CBB8E2 /* DrinkHotOrMediumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB88082919E6C100CBB8E2 /* DrinkHotOrMediumTableViewCell.swift */; };
+		9CCF3CD7290B5EA100326DF1 /* ShopHambugerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF3CD6290B5EA100326DF1 /* ShopHambugerTableViewController.swift */; };
 		9CCF3CD9290B5EB500326DF1 /* ShopHambugerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */; };
+		9CD3208F291100F800C764D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3208E291100F800C764D7 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		773EA663291CFACA00BE71DA /* HamburgerToppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerToppingTableViewController.swift; sourceTree = "<group>"; };
 		7747965428F69A63001A13E1 /* LayaAppVerson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayaAppVerson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7747965728F69A63001A13E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7747965928F69A63001A13E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,22 +71,38 @@
 		7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
 		7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
 		7747968528F6C805001A13E1 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
-		7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopTableViewCell.swift; sourceTree = "<group>"; };
-		7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopTableViewController.swift; sourceTree = "<group>"; };
+		7747968928F6E81B001A13E1 /* IndexShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexShopTableViewCell.swift; sourceTree = "<group>"; };
+		7747968B28F6E82F001A13E1 /* IndexShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexShopTableViewController.swift; sourceTree = "<group>"; };
 		7747968D28F6E886001A13E1 /* indexShopUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexShopUITableView.swift; sourceTree = "<group>"; };
+		77695827291B553E00A291DC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		7769582A291B80B100A291DC /* ShopTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTimeTableViewController.swift; sourceTree = "<group>"; };
+		7769582C291B80C100A291DC /* ShopTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTimeTableViewCell.swift; sourceTree = "<group>"; };
+		7785435F290E5E46004ECE4A /* DrinkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewController.swift; sourceTree = "<group>"; };
+		77854361290E5E55004ECE4A /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSellListTableViewCell.swift; sourceTree = "<group>"; };
 		778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSellTableViewController.swift; sourceTree = "<group>"; };
 		778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewController.swift; sourceTree = "<group>"; };
 		778E667628F8F1BB001A50E1 /* DataShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShopItem.swift; sourceTree = "<group>"; };
 		778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsTableViewCell.swift; sourceTree = "<group>"; };
-		77C5DD1628FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemSetTableViewController.swift; sourceTree = "<group>"; };
-		77C5DD1828FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemSetTableViewCell.swift; sourceTree = "<group>"; };
-		77D46D8C28FC15230064BBEC /* orderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderList.swift; sourceTree = "<group>"; };
-		77D46D8E28FC20DE0064BBEC /* orderListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderListItem.swift; sourceTree = "<group>"; };
+		779158D5291D0FD8009C896C /* HamburgerDrinkIceAndLargeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerDrinkIceAndLargeTableViewController.swift; sourceTree = "<group>"; };
+		779158D7291D100B009C896C /* HamburgerDrinkIceAndLargeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerDrinkIceAndLargeTableViewCell.swift; sourceTree = "<group>"; };
+		779158DA291D1CDB009C896C /* HamburgerDrinkIceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerDrinkIceTableViewController.swift; sourceTree = "<group>"; };
+		779158DC291D1CE9009C896C /* HamburgerDrinkIceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerDrinkIceTableViewCell.swift; sourceTree = "<group>"; };
+		779158DF291D2771009C896C /* HamburgerPepperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerPepperTableViewController.swift; sourceTree = "<group>"; };
+		779158E1291D2F2F009C896C /* HamburgerToppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerToppingTableViewCell.swift; sourceTree = "<group>"; };
+		77C718742913F2370014BE69 /* HeartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTableViewController.swift; sourceTree = "<group>"; };
+		77C718762913F2470014BE69 /* HeartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTableViewCell.swift; sourceTree = "<group>"; };
+		77D46D8C28FC15230064BBEC /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		77D46D8E28FC20DE0064BBEC /* OrderItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemList.swift; sourceTree = "<group>"; };
+		93DA3721292C95E8001BAE1E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		93DA3722292C95E8001BAE1E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9CBAA19D28FF8C1700B91988 /* OrderListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		9CBAA19F28FF8D7300B91988 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
-		9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopHambugerTableViewController.swift; sourceTree = "<group>"; };
+		9CCB777F2911043E003002D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9CCB88082919E6C100CBB8E2 /* DrinkHotOrMediumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkHotOrMediumTableViewCell.swift; sourceTree = "<group>"; };
+		9CCF3CD6290B5EA100326DF1 /* ShopHambugerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHambugerTableViewController.swift; sourceTree = "<group>"; };
 		9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHambugerTableViewCell.swift; sourceTree = "<group>"; };
+		9CD3208E291100F800C764D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		773EA662291CFA7B00BE71DA /* HamburgerSet */ = {
+			isa = PBXGroup;
+			children = (
+				779158DE291D273E009C896C /* HamburgerPepper */,
+				779158D9291D1C7D009C896C /* HamburgerDrinkIce */,
+				779158D4291D0F76009C896C /* HamburgerDrinkIceAndLarge */,
+				779158D3291D0F64009C896C /* HamburgerTopping */,
+			);
+			path = HamburgerSet;
+			sourceTree = "<group>";
+		};
 		7747964B28F69A63001A13E1 = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +170,9 @@
 				7747967528F6C634001A13E1 /* Data.swift */,
 				7747967728F6C648001A13E1 /* DataShop.swift */,
 				778E667628F8F1BB001A50E1 /* DataShopItem.swift */,
-				77D46D8E28FC20DE0064BBEC /* orderListItem.swift */,
-				77D46D8C28FC15230064BBEC /* orderList.swift */,
+				77D46D8E28FC20DE0064BBEC /* OrderItemList.swift */,
+				77D46D8C28FC15230064BBEC /* OrderList.swift */,
+				9CCB777F2911043E003002D2 /* User.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -144,8 +188,8 @@
 		7747967228F6C58B001A13E1 /* ViewIndex */ = {
 			isa = PBXGroup;
 			children = (
-				7747968828F6E7F6001A13E1 /* indexShopList */,
-				7747968728F6E7E4001A13E1 /* indexList */,
+				7747968828F6E7F6001A13E1 /* IndexShopList */,
+				7747968728F6E7E4001A13E1 /* IndexList */,
 			);
 			path = ViewIndex;
 			sourceTree = "<group>";
@@ -153,49 +197,61 @@
 		7747967328F6C59B001A13E1 /* ViewShop */ = {
 			isa = PBXGroup;
 			children = (
-				9CBAA19C28FF8BEB00B91988 /* shopOrderList */,
+				9CBAA19C28FF8BEB00B91988 /* ShopOrderList */,
 				77C5DD1428FAB01E00BCDCA8 /* ShopItem */,
-				77C5DD1528FAB05600BCDCA8 /* ShopItemSet */,
-				778E666A28F810B6001A50E1 /* shopListIndex */,
-				7747967428F6C5C2001A13E1 /* ViewShopTake */,
+				778E666A28F810B6001A50E1 /* ShopIndexList */,
+				7747967428F6C5C2001A13E1 /* Shopsell */,
 			);
 			path = ViewShop;
 			sourceTree = "<group>";
 		};
-		7747967428F6C5C2001A13E1 /* ViewShopTake */ = {
+		7747967428F6C5C2001A13E1 /* Shopsell */ = {
 			isa = PBXGroup;
 			children = (
 				778E666D28F8112A001A50E1 /* ShopSellListTableViewCell.swift */,
 				778E666F28F8115F001A50E1 /* ShopSellTableViewController.swift */,
+				77695827291B553E00A291DC /* PhotoCollectionViewCell.swift */,
 			);
-			path = ViewShopTake;
+			path = Shopsell;
 			sourceTree = "<group>";
 		};
-		7747968728F6E7E4001A13E1 /* indexList */ = {
+		7747968728F6E7E4001A13E1 /* IndexList */ = {
 			isa = PBXGroup;
 			children = (
 				7747967D28F6C7A3001A13E1 /* IndexTableViewController.swift */,
 				7747967F28F6C7B4001A13E1 /* IndexTableViewCell.swift */,
 			);
-			path = indexList;
+			path = IndexList;
 			sourceTree = "<group>";
 		};
-		7747968828F6E7F6001A13E1 /* indexShopList */ = {
+		7747968828F6E7F6001A13E1 /* IndexShopList */ = {
 			isa = PBXGroup;
 			children = (
-				7747968928F6E81B001A13E1 /* indexShopTableViewCell.swift */,
-				7747968B28F6E82F001A13E1 /* indexShopTableViewController.swift */,
+				7747968928F6E81B001A13E1 /* IndexShopTableViewCell.swift */,
+				7747968B28F6E82F001A13E1 /* IndexShopTableViewController.swift */,
+				9CD3208E291100F800C764D7 /* LoginViewController.swift */,
 			);
-			path = indexShopList;
+			path = IndexShopList;
 			sourceTree = "<group>";
 		};
-		778E666A28F810B6001A50E1 /* shopListIndex */ = {
+		77695829291B807000A291DC /* ShopTimeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7769582A291B80B100A291DC /* ShopTimeTableViewController.swift */,
+				7769582C291B80C100A291DC /* ShopTimeTableViewCell.swift */,
+			);
+			path = ShopTimeTableView;
+			sourceTree = "<group>";
+		};
+		778E666A28F810B6001A50E1 /* ShopIndexList */ = {
 			isa = PBXGroup;
 			children = (
 				7747968328F6C7F3001A13E1 /* ShopTableViewController.swift */,
 				7747968528F6C805001A13E1 /* ShopTableViewCell.swift */,
+				77C718742913F2370014BE69 /* HeartTableViewController.swift */,
+				77C718762913F2470014BE69 /* HeartTableViewCell.swift */,
 			);
-			path = shopListIndex;
+			path = ShopIndexList;
 			sourceTree = "<group>";
 		};
 		778E667128F8ED6E001A50E1 /* ViewShopItems */ = {
@@ -205,33 +261,72 @@
 			path = ViewShopItems;
 			sourceTree = "<group>";
 		};
+		779158D3291D0F64009C896C /* HamburgerTopping */ = {
+			isa = PBXGroup;
+			children = (
+				773EA663291CFACA00BE71DA /* HamburgerToppingTableViewController.swift */,
+				779158E1291D2F2F009C896C /* HamburgerToppingTableViewCell.swift */,
+			);
+			path = HamburgerTopping;
+			sourceTree = "<group>";
+		};
+		779158D4291D0F76009C896C /* HamburgerDrinkIceAndLarge */ = {
+			isa = PBXGroup;
+			children = (
+				779158D5291D0FD8009C896C /* HamburgerDrinkIceAndLargeTableViewController.swift */,
+				779158D7291D100B009C896C /* HamburgerDrinkIceAndLargeTableViewCell.swift */,
+			);
+			path = HamburgerDrinkIceAndLarge;
+			sourceTree = "<group>";
+		};
+		779158D9291D1C7D009C896C /* HamburgerDrinkIce */ = {
+			isa = PBXGroup;
+			children = (
+				779158DA291D1CDB009C896C /* HamburgerDrinkIceTableViewController.swift */,
+				779158DC291D1CE9009C896C /* HamburgerDrinkIceTableViewCell.swift */,
+			);
+			path = HamburgerDrinkIce;
+			sourceTree = "<group>";
+		};
+		779158DE291D273E009C896C /* HamburgerPepper */ = {
+			isa = PBXGroup;
+			children = (
+				779158DF291D2771009C896C /* HamburgerPepperTableViewController.swift */,
+			);
+			path = HamburgerPepper;
+			sourceTree = "<group>";
+		};
 		77C5DD1428FAB01E00BCDCA8 /* ShopItem */ = {
 			isa = PBXGroup;
 			children = (
 				778E667828F8FC56001A50E1 /* ShopItemsTableViewCell.swift */,
 				778E667228F8EDBE001A50E1 /* ShopItemsTableViewController.swift */,
-				9CCF3CD6290B5EA100326DF1 /* shopHambugerTableViewController.swift */,
-				9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */,
+				9CCB88052919E66100CBB8E2 /* ShopHamburger */,
+				7785435F290E5E46004ECE4A /* DrinkTableViewController.swift */,
+				77854361290E5E55004ECE4A /* DrinkTableViewCell.swift */,
 			);
 			path = ShopItem;
 			sourceTree = "<group>";
 		};
-		77C5DD1528FAB05600BCDCA8 /* ShopItemSet */ = {
-			isa = PBXGroup;
-			children = (
-				77C5DD1628FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift */,
-				77C5DD1828FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift */,
-			);
-			path = ShopItemSet;
-			sourceTree = "<group>";
-		};
-		9CBAA19C28FF8BEB00B91988 /* shopOrderList */ = {
+		9CBAA19C28FF8BEB00B91988 /* ShopOrderList */ = {
 			isa = PBXGroup;
 			children = (
 				9CBAA19D28FF8C1700B91988 /* OrderListTableViewController.swift */,
 				9CBAA19F28FF8D7300B91988 /* OrderListTableViewCell.swift */,
 			);
-			path = shopOrderList;
+			path = ShopOrderList;
+			sourceTree = "<group>";
+		};
+		9CCB88052919E66100CBB8E2 /* ShopHamburger */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF3CD8290B5EB500326DF1 /* ShopHambugerTableViewCell.swift */,
+				9CCF3CD6290B5EA100326DF1 /* ShopHambugerTableViewController.swift */,
+				773EA662291CFA7B00BE71DA /* HamburgerSet */,
+				77695829291B807000A291DC /* ShopTimeTableView */,
+				9CCB88082919E6C100CBB8E2 /* DrinkHotOrMediumTableViewCell.swift */,
+			);
+			path = ShopHamburger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +374,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 7747964B28F69A63001A13E1;
 			packageReferences = (
@@ -311,31 +407,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CCF3CD7290B5EA100326DF1 /* shopHambugerTableViewController.swift in Sources */,
+				9CCF3CD7290B5EA100326DF1 /* ShopHambugerTableViewController.swift in Sources */,
 				778E667328F8EDBE001A50E1 /* ShopItemsTableViewController.swift in Sources */,
 				9CCF3CD9290B5EB500326DF1 /* ShopHambugerTableViewCell.swift in Sources */,
 				7747967E28F6C7A3001A13E1 /* IndexTableViewController.swift in Sources */,
+				7769582B291B80B100A291DC /* ShopTimeTableViewController.swift in Sources */,
+				7769582D291B80C100A291DC /* ShopTimeTableViewCell.swift in Sources */,
 				778E667728F8F1BB001A50E1 /* DataShopItem.swift in Sources */,
-				77C5DD1728FAB08B00BCDCA8 /* ShopItemSetTableViewController.swift in Sources */,
+				9CD3208F291100F800C764D7 /* LoginViewController.swift in Sources */,
+				779158E2291D2F2F009C896C /* HamburgerToppingTableViewCell.swift in Sources */,
 				9CBAA19E28FF8C1700B91988 /* OrderListTableViewController.swift in Sources */,
+				9CCB77802911043E003002D2 /* User.swift in Sources */,
 				7747966228F69A63001A13E1 /* LayaAppVerson1.xcdatamodeld in Sources */,
 				7747968628F6C805001A13E1 /* ShopTableViewCell.swift in Sources */,
-				77D46D8D28FC15230064BBEC /* orderList.swift in Sources */,
-				77D46D8F28FC20DE0064BBEC /* orderListItem.swift in Sources */,
+				779158D8291D100B009C896C /* HamburgerDrinkIceAndLargeTableViewCell.swift in Sources */,
+				77D46D8D28FC15230064BBEC /* OrderList.swift in Sources */,
+				77D46D8F28FC20DE0064BBEC /* OrderItemList.swift in Sources */,
+				779158DD291D1CE9009C896C /* HamburgerDrinkIceTableViewCell.swift in Sources */,
+				77C718772913F2470014BE69 /* HeartTableViewCell.swift in Sources */,
 				7747968028F6C7B4001A13E1 /* IndexTableViewCell.swift in Sources */,
 				7747965828F69A63001A13E1 /* AppDelegate.swift in Sources */,
 				7747967828F6C648001A13E1 /* DataShop.swift in Sources */,
-				7747968A28F6E81B001A13E1 /* indexShopTableViewCell.swift in Sources */,
+				77854362290E5E55004ECE4A /* DrinkTableViewCell.swift in Sources */,
+				7747968A28F6E81B001A13E1 /* IndexShopTableViewCell.swift in Sources */,
 				778E667028F8115F001A50E1 /* ShopSellTableViewController.swift in Sources */,
-				7747968C28F6E82F001A13E1 /* indexShopTableViewController.swift in Sources */,
+				77695828291B553E00A291DC /* PhotoCollectionViewCell.swift in Sources */,
+				7747968C28F6E82F001A13E1 /* IndexShopTableViewController.swift in Sources */,
+				779158E0291D2771009C896C /* HamburgerPepperTableViewController.swift in Sources */,
 				7747965A28F69A63001A13E1 /* SceneDelegate.swift in Sources */,
+				773EA664291CFACA00BE71DA /* HamburgerToppingTableViewController.swift in Sources */,
+				9CCB88092919E6C100CBB8E2 /* DrinkHotOrMediumTableViewCell.swift in Sources */,
 				9CBAA1A028FF8D7300B91988 /* OrderListTableViewCell.swift in Sources */,
-				77C5DD1928FAB0A900BCDCA8 /* ShopItemSetTableViewCell.swift in Sources */,
 				7747968428F6C7F3001A13E1 /* ShopTableViewController.swift in Sources */,
+				779158D6291D0FD8009C896C /* HamburgerDrinkIceAndLargeTableViewController.swift in Sources */,
 				778E666E28F8112A001A50E1 /* ShopSellListTableViewCell.swift in Sources */,
 				778E667928F8FC56001A50E1 /* ShopItemsTableViewCell.swift in Sources */,
+				779158DB291D1CDB009C896C /* HamburgerDrinkIceTableViewController.swift in Sources */,
+				77C718752913F2370014BE69 /* HeartTableViewController.swift in Sources */,
 				7747967628F6C634001A13E1 /* Data.swift in Sources */,
 				7747968E28F6E886001A13E1 /* indexShopUITableView.swift in Sources */,
+				77854360290E5E46004ECE4A /* DrinkTableViewController.swift in Sources */,
 				7747967A28F6C6FC001A13E1 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +458,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7747965E28F69A63001A13E1 /* Base */,
+				93DA3721292C95E8001BAE1E /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -355,6 +467,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7747966628F69A65001A13E1 /* Base */,
+				93DA3722292C95E8001BAE1E /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -366,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -426,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

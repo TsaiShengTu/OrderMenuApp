@@ -36,12 +36,43 @@ enum ShopItemSection:Int{
 }
 
 
-//這邊是套餐選單的資料
+//套餐選單的資料
 struct ShopItemSet{
+    //商品名稱
     let name:String
+    //商品價錢
     let price:Int
+    //商品有無點選
+    var isadd = false
+    //商品類別
+    let setNumber:Int
+    //商品客製化選項
+    var choices: [String]
+}
+
+//section的分類
+enum ShopItemSetSectionInt:Int{
+    case meal
+    case drink
+    case toppingGrade
+}
+
+//這邊是飲料選單的資料
+
+struct ShopDrinkItem{
+    let name:String
+    let price:Int?
     var isadd = false
 }
+
+enum ShopDrinkItemSection:Int{
+    case hotOrcold
+    case mediumOrLagre
+}
+
+
+
+
 
 enum ShopItemSetSection:Int{
     case meal
@@ -62,6 +93,10 @@ enum ShopItemSetSectionPeter:String{
     case drink
     case toppingGrade
 }
+
+
+
+
 
 extension ShopItemSetPeter{
     static var data:[Self]{

@@ -1,0 +1,315 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1fz-iw-jyD"; */
+"1fz-iw-jyD.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "2L0-xv-JqT"; */
+"2L0-xv-JqT.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2L0-xv-JqT"; */
+"2L0-xv-JqT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2k8-PH-NHj"; */
+"2k8-PH-NHj.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "back"; ObjectID = "5KB-li-ZeO"; */
+"5KB-li-ZeO.title" = "back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5j0-Qh-ogb"; */
+"5j0-Qh-ogb.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "5m0-oE-t7M"; */
+"5m0-oE-t7M.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5m0-oE-t7M"; */
+"5m0-oE-t7M.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6FA-CZ-Rf2"; */
+"6FA-CZ-Rf2.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6hC-lE-IWt"; */
+"6hC-lE-IWt.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "容量"; ObjectID = "77R-bZ-TqR"; */
+"77R-bZ-TqR.headerTitle" = "容量";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7u4-Lk-YdY"; */
+"7u4-Lk-YdY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7zE-TB-UpF"; */
+"7zE-TB-UpF.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8UM-WH-uH9"; */
+"8UM-WH-uH9.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "8se-dT-eIN"; */
+"8se-dT-eIN.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8se-dT-eIN"; */
+"8se-dT-eIN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "A3r-0Z-tl7"; */
+"A3r-0Z-tl7.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BIJ-5D-39U"; */
+"BIJ-5D-39U.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BNm-7h-MfY"; */
+"BNm-7h-MfY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CIk-s3-2Lh"; */
+"CIk-s3-2Lh.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "Ck1-pK-yzA"; */
+"Ck1-pK-yzA.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ck1-pK-yzA"; */
+"Ck1-pK-yzA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D5w-6N-8JN"; */
+"D5w-6N-8JN.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "香料"; ObjectID = "Dwb-L0-930"; */
+"Dwb-L0-930.headerTitle" = "香料";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "FJO-Vm-gZh"; */
+"FJO-Vm-gZh.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FJO-Vm-gZh"; */
+"FJO-Vm-gZh.normalTitle" = "Button";
+
+/* Class = "UITableViewSection"; headerTitle = "飲品溫度"; ObjectID = "FN8-Q1-Qxs"; */
+"FN8-Q1-Qxs.headerTitle" = "飲品溫度";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FTk-ee-Zhk"; */
+"FTk-ee-Zhk.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HUw-hD-9fX"; */
+"HUw-hD-9fX.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IH2-BA-6GJ"; */
+"IH2-BA-6GJ.text" = "Label";
+
+/* Class = "UILabel"; text = "胡椒"; ObjectID = "IMT-9S-qvU"; */
+"IMT-9S-qvU.text" = "胡椒";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "JvQ-sm-mcu"; */
+"JvQ-sm-mcu.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JvQ-sm-mcu"; */
+"JvQ-sm-mcu.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "K2o-He-945"; */
+"K2o-He-945.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "K5S-Sg-pra"; */
+"K5S-Sg-pra.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L6P-oR-WTG"; */
+"L6P-oR-WTG.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LqF-Nd-Bl1"; */
+"LqF-Nd-Bl1.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OwH-mi-uJM"; */
+"OwH-mi-uJM.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "PHq-fo-kiz"; */
+"PHq-fo-kiz.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PHq-fo-kiz"; */
+"PHq-fo-kiz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QLz-OR-RTa"; */
+"QLz-OR-RTa.text" = "Label";
+
+/* Class = "UILabel"; text = "PriceLabel"; ObjectID = "RCW-jo-Wrk"; */
+"RCW-jo-Wrk.text" = "PriceLabel";
+
+/* Class = "UILabel"; text = "信箱"; ObjectID = "SLl-YT-wv6"; */
+"SLl-YT-wv6.text" = "信箱";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Spm-nD-t9n"; */
+"Spm-nD-t9n.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tem-bS-vZx"; */
+"Tem-bS-vZx.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "UBT-gP-rrz"; */
+"UBT-gP-rrz.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UBT-gP-rrz"; */
+"UBT-gP-rrz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UQy-rF-LTu"; */
+"UQy-rF-LTu.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = " 門市資訊"; ObjectID = "VUA-aC-8VL"; */
+"VUA-aC-8VL.configuration.title" = " 門市資訊";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VUA-aC-8VL"; */
+"VUA-aC-8VL.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "VqS-CA-vtp"; */
+"VqS-CA-vtp.title" = "Title";
+
+/* Class = "UIButton"; configuration.title = "新建帳號"; ObjectID = "W9x-Bh-qgi"; */
+"W9x-Bh-qgi.configuration.title" = "新建帳號";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W9x-Bh-qgi"; */
+"W9x-Bh-qgi.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "登出"; ObjectID = "XRP-vI-God"; */
+"XRP-vI-God.title" = "登出";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xi3-Nq-Heg"; */
+"Xi3-Nq-Heg.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "a5N-Hi-c4u"; */
+"a5N-Hi-c4u.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aFO-gj-XAQ"; */
+"aFO-gj-XAQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aMU-jN-DIZ"; */
+"aMU-jN-DIZ.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "agJ-H8-1oY"; */
+"agJ-H8-1oY.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bDP-Pb-TgN"; */
+"bDP-Pb-TgN.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bFo-SX-1gg"; */
+"bFo-SX-1gg.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "bSI-EP-ZJ0"; */
+"bSI-EP-ZJ0.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bSI-EP-ZJ0"; */
+"bSI-EP-ZJ0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bic-nE-GAT"; */
+"bic-nE-GAT.text" = "Label";
+
+/* Class = "UILabel"; text = "密碼"; ObjectID = "c1N-b6-bqH"; */
+"c1N-b6-bqH.text" = "密碼";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "clC-Ti-afD"; */
+"clC-Ti-afD.text" = "Label";
+
+/* Class = "UILabel"; text = "帳號"; ObjectID = "eWJ-o1-ky5"; */
+"eWJ-o1-ky5.text" = "帳號";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "en7-tb-28y"; */
+"en7-tb-28y.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "en7-tb-28y"; */
+"en7-tb-28y.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eux-On-zee"; */
+"eux-On-zee.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "fER-iU-Li5"; */
+"fER-iU-Li5.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fER-iU-Li5"; */
+"fER-iU-Li5.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "fZ6-Tw-ur5"; */
+"fZ6-Tw-ur5.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fZ6-Tw-ur5"; */
+"fZ6-Tw-ur5.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "gSv-sK-rsg"; */
+"gSv-sK-rsg.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gSv-sK-rsg"; */
+"gSv-sK-rsg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h9v-Yw-OVb"; */
+"h9v-Yw-OVb.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iMh-lK-XIE"; */
+"iMh-lK-XIE.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "ik2-BO-FlS"; */
+"ik2-BO-FlS.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ik2-BO-FlS"; */
+"ik2-BO-FlS.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "jN8-Lm-nf0"; */
+"jN8-Lm-nf0.title" = "Back";
+
+/* Class = "UIButton"; configuration.title = "登入"; ObjectID = "k41-vm-tuu"; */
+"k41-vm-tuu.configuration.title" = "登入";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "k41-vm-tuu"; */
+"k41-vm-tuu.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "lKY-s6-7WD"; */
+"lKY-s6-7WD.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lKY-s6-7WD"; */
+"lKY-s6-7WD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "o8s-fD-tV7"; */
+"o8s-fD-tV7.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "pAv-WL-cOQ"; */
+"pAv-WL-cOQ.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pAv-WL-cOQ"; */
+"pAv-WL-cOQ.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "q4k-w2-sRJ"; */
+"q4k-w2-sRJ.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qI5-bU-mtk"; */
+"qI5-bU-mtk.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "qxS-ye-nx2"; */
+"qxS-ye-nx2.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qxS-ye-nx2"; */
+"qxS-ye-nx2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rGV-pA-qQl"; */
+"rGV-pA-qQl.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rnm-vH-yi4"; */
+"rnm-vH-yi4.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "seW-9G-0Q2"; */
+"seW-9G-0Q2.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "sht-Y3-EXL"; */
+"sht-Y3-EXL.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sht-Y3-EXL"; */
+"sht-Y3-EXL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "st6-0b-vpK"; */
+"st6-0b-vpK.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uf5-LM-8OL"; */
+"uf5-LM-8OL.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "ufB-7g-tjh"; */
+"ufB-7g-tjh.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ufB-7g-tjh"; */
+"ufB-7g-tjh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "v8j-yw-h32"; */
+"v8j-yw-h32.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "xcF-sx-0Vx"; */
+"xcF-sx-0Vx.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xwO-1M-Jxx"; */
+"xwO-1M-Jxx.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ytG-s2-fQ7"; */
+"ytG-s2-fQ7.text" = "Label";

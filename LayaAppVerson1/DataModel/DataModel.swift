@@ -6,7 +6,8 @@
 //
 
 import Foundation
-public let apikey = "keyDPFR7Okan1NGGC"
+import UIKit
+public let apikey = ""
 
 
 class ShopItemController{
@@ -87,36 +88,10 @@ class ShopItemController{
         }
         .resume()
     }
-//    func uploadOrder(completion:@escaping(Result<[orderMenu],Error>)->()){
-//        let shopListUrl = URL(string: "https://airtable.com/appk1fzVKpuilyG7v/tblU1UTuKJau2CCdM/viwdrba1DoM1Ch5Zo?blocks=hide")!
-//        var request = URLRequest(url: shopListUrl)
-//        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
-//        request.httpMethod = "POST"
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        let encoder = JSONEncoder()
-//        URLSession.shared.dataTask(with: request) { data, response, error
-//            in
-//        }
-//    }
-    
-//    func fetchshopListItem2(completion:@escaping(Result<DataShopItem2,Error>)->()){
-//        var request = URLRequest(url:shopItemUrl2)
-//        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
-//        URLSession.shared.dataTask(with: request) { data, response, error
-//            in
-//            let decoder = JSONDecoder()
-//            if let data = data{
-//                do{
-//                    let shopListitemResponse = try decoder.decode(DataShopItem2.self, from: data)
-//
-//                    completion(.success(shopListitemResponse))
-//                }
-//                catch{
-//                    print(error)
-//                    completion(.failure(error))
-//                }
-//            }
-//        }
-//        .resume()
-//    }
 }
+
+
+
+
+
+
